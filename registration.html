@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./registration.css" />
+</head>
+
+<body>
+    <header class="header">
+        <h1>REGISTER</h1>
+    </header>
+
+    <main class="main">
+        <form>
+            <div class="container">
+                <label for="uname"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="fname" required />
+
+                <label for="psw"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name" name="lname" required />
+                <label for="phone"><b>Phone Number</b></label>
+                <input type="tel" placeholder="0812-000-5600" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required />
+                <label for="email"><b>Enter Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required />
+                <label for="gender"><b>Select Your Gender</b></label>
+                <input type="radio" name="gender" value="female" required /> Female
+                <br />
+                <input type="radio" name="gender" value="male" required /> Male <br />
+                <input type="radio" name="gender" value="other" required /> Other
+                <br />
+                <label for="birthday"><b>Birthday:</b></label>
+                <input type="date" name="birthday" required />
+                <label for="favcolor"><b>Select Your Favourite Colour:</b></label>
+                <input type="color" value="red" required />
+                <div class="button">
+                    <button type="submit">
+              <a href="login.html" target="_blank">Register</a>
+            </button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <small>&copy; Joy Oluwafemi</small>
+    </footer>
+</body>
+
+</html>
